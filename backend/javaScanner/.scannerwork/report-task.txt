@@ -1,0 +1,7 @@
+organization=zakari
+projectKey=zakari_javascanner
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.58741
+dashboardUrl=https://sonarcloud.io/dashboard?id=zakari_javascanner
+ceTaskId=AZQFbLUtm2pIx8C1zJmu
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZQFbLUtm2pIx8C1zJmu

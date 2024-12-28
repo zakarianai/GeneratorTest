@@ -1,0 +1,5 @@
+org.javascanner.controller.JavaScannerController#scanAndSendJavaFileRecomendations(Ljava/lang/String;)Ljava/lang/String;
+false
+7187fdcc977f7cc0aba85259828f5124
+==
+scanAndSendPackageRecomendations org.javascanner.service.JavaScannerService#scanAndSendPackageRecomendations(Ljava/lang/String;)Ljava/lang/String;

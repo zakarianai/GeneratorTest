@@ -1,0 +1,63 @@
+
+xorg.javascanner.controller.JavaScannerController#scanAndSendJavaFileRecomendations(Ljava/lang/String;)Ljava/lang/String;r
+hF:/FRO/all/TestGenerator/javaScanner/src/main/java/org/javascanner/controller/JavaScannerController.java (3"startingBlock*ª
+startingBlock3 (Nƒ
+€
+ ("
+%2"
+__annotate**
+
+__unknown_file (
+
+GetMapping*6
+
+__unknown_file (
+
+pathjava.lang.String…
+‚
+4 (A
+%3"
+__annotate*,
+
+__unknown_file (
+RequestParam*6
+
+__unknown_file (
+
+pathjava.lang.String|
+z
+I (M
+pathjava.lang.String"__annotation*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*
+1*¾
+1 (!¯
+¬
+ (!0
+%0*org.javascanner.service.JavaScannerService"__id*h
+
+__unknown_file (L*J2
+0org.javascanner.controller.JavaScannerController"
+javaScannerServiceÖÓ
+ (H
+%1java.lang.String"qorg.javascanner.service.JavaScannerService#scanAndSendPackageRecomendations(Ljava/lang/String;)Ljava/lang/String;*N
+
+__unknown_file (2
+0
+%0*org.javascanner.service.JavaScannerService*6
+
+__unknown_file (
+
+pathjava.lang.String24scanAndSendPackageRecomendations(Ljava/lang/String;)"$
+ (I
+
+%1java.lang.String:$
+4 (M
+pathjava.lang.StringB42
+0org.javascanner.controller.JavaScannerControllerH

@@ -1,0 +1,15 @@
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-sm-3 my-1">
+      <label class="sr-only" for="inlineFormInputName">Path</label>
+      <input type="text" class="form-control" id="inlineFormInputName" placeholder="F:/FRO/all/hotel" maxlength="90">
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" (click)="startScan()" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+<div class="container mt-3">
+  <h1>Scan Project</h1>
+  <pre *ngIf="result">{{ result }}</pre>
+</div>

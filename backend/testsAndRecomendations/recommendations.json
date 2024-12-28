@@ -1,0 +1,52 @@
+{
+  "General Code Quality Recommendations": [
+    {
+      "recommendation": "Encapsulate the business logic in service classes rather than directly in the web service (controler) layer for better separation of concerns."
+    },
+    {
+      "recommendation": "Use Lombok library to reduce boilerplate code for model classes."
+    },
+    {
+      "recommendation": "Consider using a MapStruct or ModelMapper library for DTO to Entity and Entity to DTO conversion."
+    },
+    {
+      "recommendation": "For better readability of the code, the function bodies can be formatted with proper indentation."
+    },
+    {
+      "recommendation": "Consider using more meaningful variable names and self-explanatory function names."
+    }
+  ],
+  "Security Recommendations": [
+    {
+      "recommendation": "Secure email configurations and API tokens in properties file, an environment variable, or use a secure vault."
+    },
+    {
+      "recommendation": "MotDePasse is stored after hashing. Ensure that it is also salted to increase the security of the password."
+    },
+    {
+      "recommendation": "There are certain methods which take String arguments and store those inputs to the database. Consider using binding results and proper validation of input to prevent SQL injection and XSS attacks."
+    }
+  ],
+  "Dependency Management": [
+    {
+      "recommendation": "Consider using dependency injection for 'PasswordAuthentication' class in 'MailService'."
+    },
+    {
+      "recommendation": "It would be better to use interfaces for the Service classes, which would make the code loosely coupled and easier to manage."
+    }
+  ],
+  "Clean Code Practices": [
+    {
+      "recommendation": "Comments in the code can be in English for better understanding and uniformity."
+    },
+    {
+      "recommendation": "While it's good to see try-catch blocks have been used to handle exceptions, a global exception handling mechanism with @ControllerAdvice would keep the code clean."
+    },
+    {
+      "recommendation": "Remove commented code and system logs before check-in."
+    },
+    {
+      "recommendation": "In some methods, null checks are being performed. Consider using Optional to handle null values and to avoid NullPointerException."
+    }
+  ]
+}

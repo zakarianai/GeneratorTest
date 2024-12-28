@@ -1,0 +1,7 @@
+organization=zakari
+projectKey=zakari_springboot-chatgpt
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.58741
+dashboardUrl=https://sonarcloud.io/dashboard?id=zakari_springboot-chatgpt
+ceTaskId=AZQFauJttVs9uHzNf7Nh
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZQFauJttVs9uHzNf7Nh

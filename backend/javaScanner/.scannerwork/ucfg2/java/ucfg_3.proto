@@ -1,0 +1,15 @@
+
+;org.javascanner.dto.ClassDetail#getFields()Ljava/util/List;a
+WF:/FRO/all/TestGenerator/javaScanner/src/main/java/org/javascanner/dto/ClassDetail.java (&"1*¨
+1 (u
+s
+ (
+%0java.util.List"__id*K
+
+__unknown_file (/*-!
+org.javascanner.dto.ClassDetail"
+fields""
+ (
+
+%0java.util.ListB#!
+org.javascanner.dto.ClassDetailH

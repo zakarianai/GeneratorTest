@@ -1,0 +1,79 @@
+[
+  {"package": "ma.hotel.hotelproject.Services",
+    "className": "RoomService",
+    "type": "SERVICE",
+    "methodsDetail": [
+      {
+        "method": "getAllRooms",
+        "body": "return roomDao.findAll();"
+      },
+      {
+
+        "method": "getRoomById",
+        "body": "Optional<Room> room = roomDao.findById(id);\nreturn room.orElse(null);"
+      },
+      {
+        "method": "addRoom",
+        "body": "Room existingRooms = roomDao.findByNumero(room.getNumero());\nif (existingRooms == null) {\n    if (room.getNumero() == null || room.getNumero().isEmpty()) {\n        room.setNumero(\"Default Number\");\n    }\n    if (room.getPrixParJour() == 0) {\n        room.setPrixParJour(100.0);\n    }\n    if (room.getDisponibilité() == null || room.getDisponibilité().isEmpty()) {\n        room.setDisponibilité(\"Available\");\n    }\n    if (room.getImage() == null || room.getImage().isEmpty()) {\n        room.setImage(\"default.jpg\");\n    }\n    if (room.getDescription() == null || room.getDescription().isEmpty()) {\n        room.setDescription(\"No description available\");\n    }\n    if (room.getNombreDeLit() == 0) {\n        room.setNombreDeLit(1);\n    }\n    roomDao.save(room);\n    return room;\n}\nreturn null;"
+      },
+      {
+        "method": "updateRoom",
+        "body": "Room existingRoomOpt = roomDao.findByNumero(updatedRoom.getNumero());\nif (existingRoomOpt != null) {\n    Room existingRoom = existingRoomOpt;\n    if (updatedRoom.getNumero() != null) {\n        existingRoom.setNumero(updatedRoom.getNumero());\n    }\n    if (updatedRoom.getPrixParJour() != 0) {\n        existingRoom.setPrixParJour(updatedRoom.getPrixParJour());\n    }\n    if (updatedRoom.getDisponibilité() != null) {\n        existingRoom.setDisponibilité(updatedRoom.getDisponibilité());\n    }\n    if (updatedRoom.getImage() != null) {\n        existingRoom.setImage(updatedRoom.getImage());\n    }\n    if (updatedRoom.getDescription() != null) {\n        existingRoom.setDescription(updatedRoom.getDescription());\n    }\n    if (updatedRoom.getNombreDeLit() != 0) {\n        existingRoom.setNombreDeLit(updatedRoom.getNombreDeLit());\n    }\n    roomDao.save(existingRoom);\n    return \"Room updated successfully\";\n}\nreturn \"Room not found\";"
+      },
+      {
+        "method": "deleteRoom",
+        "body": "if (roomDao.existsById(id)) {\n    roomDao.deleteById(id);\n    return \"Room deleted successfully\";\n} else {\n    return \"Room not found\";\n}"
+      }
+    ]
+  },
+  {
+    "package": "ma.hotel.hotelproject.Services",
+    "className": "UserService",
+    "type": "SERVICE",
+    "methodsDetail": [
+      {
+        "method": "register",
+        "body": "User existingUser = userDao.findByEmail(user.getEmail());\nString hashedPassword = passwordEncoder.encode(user.getMotDePasse());\nif (existingUser != null) {\n    return \"User already exists with this email\";\n}\nif (user.getNom() == null || user.getNom().isEmpty()) {\n    user.setNom(user.getNom());\n}\nuser.setMotDePasse(hashedPassword);\nif (user.getRole() == null || user.getRole().isEmpty()) {\n    user.setRole(user.getRole());\n}\nif (user.getDateInscription() == null) {\n    user.setDateInscription(new Date());\n}\nuserDao.save(user);\nreturn \"User registered successfully\";"
+      },
+      {
+        "method": "signIn",
+        "body": "User user = userDao.findByEmail(email);\nif (user != null && passwordEncoder.matches(password, user.getMotDePasse())) {\n    return user;\n}\nreturn null;"
+      },
+      {
+        "method": "forgotPassword",
+        "body": "User user = userDao.findByEmail(email);\nif (user != null) {\n    Random random = new Random();\n    String token = String.format(\"%08d\", random.nextInt(100000000));\n    user.setToken(token);\n    userDao.save(user);\n    try {\n        mailService.sendMail(email, \"Password Reset\", \"Your reset token is: \" + token);\n    } catch (MessagingException e) {\n        System.out.println(\"Error sending email: \" + e.getMessage());\n    }\n    return user;\n}\nreturn null;"
+      },
+      {
+        "method": "updateUser",
+        "body": "User existingUser = userDao.findByEmail(updatedUser.getEmail());\nif (existingUser != null) {\n    if (updatedUser.getNom() != null) {\n        existingUser.setNom(updatedUser.getNom());\n    }\n    if (updatedUser.getEmail() != null) {\n        existingUser.setEmail(updatedUser.getEmail());\n    }\n    userDao.save(existingUser);\n    return existingUser;\n}\nreturn null;"
+      },
+      {
+        "method": "deleteUser",
+        "body": "User user = userDao.findByEmail(email);\nif (user != null) {\n    userDao.delete(user);\n    return true;\n}\nreturn false;"
+      }
+    ]
+  },
+  {
+    "package": "ma.hotel.hotelproject.Services",
+    "className": "HotelService",
+    "type": "SERVICE",
+    "methodsDetail": [
+      {
+        "method": "addHotel",
+        "body": "Hotel existingHotel = hotelDao.findByNom(hotel.getNom());\nif (existingHotel != null) {\n    return \"Hotel already exists with this name and address\";\n}\nhotelDao.save(hotel);\nreturn \"Hotel added successfully\";"
+      },
+      {
+        "method": "deleteHotel",
+        "body": "if (hotelDao.existsById(id)) {\n    hotelDao.deleteById(id);\n    return \"Hotel deleted successfully\";\n} else {\n    return \"Hotel not found\";\n}"
+      },
+      {
+        "method": "updateHotel",
+        "body": "Hotel existingHotel = hotelDao.findByNom(updatedHotel.getNom());\nif (existingHotel != null) {\n    if (updatedHotel.getNom() != null) {\n        existingHotel.setNom(updatedHotel.getNom());\n    }\n    hotelDao.save(existingHotel);\n    return existingHotel;\n}\nreturn null;"
+      },
+      {
+        "method": "findAllHotel",
+        "body": "return hotelDao.findAll();"
+      }
+    ]
+  }
+]

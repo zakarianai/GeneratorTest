@@ -1,0 +1,26 @@
+
+__sonar_lambda_0$e
+[F:/FRO/all/TestGenerator/javaScanner/src/main/java/org/javascanner/util/PackageScanner.java (;"1*ê
+1 (ôñ
+ ()
+%6java.lang.String"/java.nio.file.Path#toString()Ljava/lang/String;*5
+
+__unknown_file (
+
+pjava.nio.file.Path2
+toString()«ƒ
+ (;
+%7boolean".java.lang.String#endsWith(Ljava/lang/String;)Z*4
+
+__unknown_file (
+
+%6java.lang.String*%
+
+__unknown_file (	
+.java2endsWith(Ljava/lang/String;)"
+ (;
+
+%7boolean:#
+ (
+pjava.nio.file.PathB 
+java.util.function.Predicate

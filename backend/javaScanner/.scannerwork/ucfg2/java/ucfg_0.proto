@@ -1,0 +1,17 @@
+
+Borg.javascanner.dto.ClassDetail#getPackageName()Ljava/lang/String;a
+WF:/FRO/all/TestGenerator/javaScanner/src/main/java/org/javascanner/dto/ClassDetail.java
+ 
+( "1*±
+1 (|
+z
+ (
+%0java.lang.String"__id*P
+
+__unknown_file (4*2!
+org.javascanner.dto.ClassDetail"
+packageName"$
+ (
+
+%0java.lang.StringB#!
+org.javascanner.dto.ClassDetailH

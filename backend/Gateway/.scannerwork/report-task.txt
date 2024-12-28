@@ -1,0 +1,7 @@
+organization=zakari
+projectKey=zakari_gateway
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.58741
+dashboardUrl=https://sonarcloud.io/dashboard?id=zakari_gateway
+ceTaskId=AZQFaFt6odsZuHD32W4P
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZQFaFt6odsZuHD32W4P

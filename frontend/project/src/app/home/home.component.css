@@ -1,0 +1,124 @@
+body, html {
+  height: 100%; /* Assure que la hauteur de la page occupe l'écran entier */
+  margin: 0;
+  padding: 0;
+}
+.container {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre */
+.container h1 {
+  color: #007bff;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour la balise <pre> */
+.container pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  overflow-x: auto;
+}
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+pre {
+  text-align: left;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+  overflow-x: auto;
+}
+/* Style pour le formulaire */
+form {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+/* Style pour la ligne du formulaire */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style pour les champs de saisie */
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Style pour le bouton */
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+/*
+/* Style pour la section contenant le titre et le résultat 
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+pre {
+  text-align: left;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}*/
+
+/* Ajouter des marges et padding pour les éléments internes */
+.col-sm-3, .col-auto {
+  padding: 5px;
+}

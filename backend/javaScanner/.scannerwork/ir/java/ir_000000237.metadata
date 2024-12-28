@@ -1,0 +1,5 @@
+org.javascanner.controller.JavaScannerController#scanAndSendJavaFile(Ljava/lang/String;)Ljava/lang/String;
+false
+ab9db7bae7e70aafc863e9e8a8fbb0cd
+==
+scanAndSendPackage org.javascanner.service.JavaScannerService#scanAndSendPackage(Ljava/lang/String;)Ljava/lang/String;

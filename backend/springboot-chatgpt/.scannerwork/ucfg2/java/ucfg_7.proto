@@ -1,0 +1,15 @@
+
+?com.javatechie.dto.ChatGptResponse#getChoices()Ljava/util/List;k
+aF:/FRO/all/TestGenerator/springboot-chatgpt/src/main/java/com/javatechie/dto/ChatGptResponse.java (""1*¬
+1 (y
+w
+ (
+%0java.util.List"__id*O
+
+__unknown_file (3*1$
+"com.javatechie.dto.ChatGptResponse"	
+choices""
+ (
+
+%0java.util.ListB&$
+"com.javatechie.dto.ChatGptResponseH

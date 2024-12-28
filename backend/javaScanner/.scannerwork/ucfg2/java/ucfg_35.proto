@@ -1,0 +1,99 @@
+
+Sorg.javascanner.util.PackageScanner#scanPackage(Ljava/lang/String;)Ljava/util/List;e
+[F:/FRO/all/TestGenerator/javaScanner/src/main/java/org/javascanner/util/PackageScanner.java$ (/"9*ç
+4 `(u
+s
+ `(!
+%9java.util.function.Consumer"__declareFunction*1
+
+__unknown_file (
+__sonar_lambda_1$Å˛
+ `(
+%29void"?java.util.stream.Stream#forEach(Ljava/util/function/Consumer;)V*;
+
+__unknown_file (
+
+%8java.util.stream.Stream*?
+
+__unknown_file (#
+!
+%9java.util.function.Consumer2&forEach(Ljava/util/function/Consumer;)*
+1*π
+5 (;v
+t
+ (;"
+%5java.util.function.Predicate"__declareFunction*1
+
+__unknown_file (
+__sonar_lambda_0$¨©
+ (<
+%8java.util.stream.Stream"Wjava.util.stream.Stream#filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;*;
+
+__unknown_file (
+
+%4java.util.stream.Stream*@
+
+__unknown_file ($
+"
+%5java.util.function.Predicate2&filter(Ljava/util/function/Predicate;)*
+4*£
+6 (,éã
+ (-
+%4java.util.stream.Stream"Wjava.util.stream.Stream#filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;*;
+
+__unknown_file (
+
+%3java.util.stream.Stream*"
+
+__unknown_file (
+""2&filter(Ljava/util/function/Predicate;)*
+5*ó
+7 ('Ç
+ˇ
+ ('
+%3java.util.stream.Stream"gjava.nio.file.Files#walk(Ljava/nio/file/Path;[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream;*3
+
+__unknown_file ("
+java.nio.file.Files*6
+
+__unknown_file (
+
+%2java.nio.file.Path*
+6*˝
+8 (Ë
+Â
+ (&
+%2java.nio.file.Path"Rjava.nio.file.Paths#get(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;*3
+
+__unknown_file ("
+java.nio.file.Paths*6
+
+__unknown_file (
+
+pathjava.lang.String*
+7*©
+9) (:<:
+- (8
+%0java.util.ArrayList"java.util.ArrayListj
+h
+) (:
+%1"java.util.ArrayList#<init>()V*7
+
+__unknown_file (
+
+%0java.util.ArrayListk
+i
+ (;
+classDetailsjava.util.List"__id*7
+
+__unknown_file (
+
+%0java.util.ArrayList*
+8*;
+1e e(",
+e e( 
+
+classDetailsjava.util.List:$
+0 (;
+pathjava.lang.StringB'"%
+#org.javascanner.util.PackageScannerH

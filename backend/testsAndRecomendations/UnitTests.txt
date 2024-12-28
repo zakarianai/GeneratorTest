@@ -1,0 +1,179 @@
+```java
+package ma.hotel.hotelproject.Beans.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class BookingTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the Booking class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Beans.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class HotelTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the Hotel class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Beans.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class ReviewTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the Review class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Beans.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class RoomTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the Room class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Beans.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class UserTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the User class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Mail.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class MailServiceTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the MailService class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Services.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class HotelServiceTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the HotelService class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Services.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class RoomServiceTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the RoomService class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.Services.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class UserServiceTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the UserService class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.WebService.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class HotelWSTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the HotelWS class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.WebService.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class RoomWSTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the RoomWS class
+
+}
+
+```
+
+```java
+package ma.hotel.hotelproject.WebService.test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class UserWSTest {
+
+    // Write your tests here
+    // Make sure to cover all methods and functionalities of the UserWS class
+
+}
+
+```

@@ -1,0 +1,172 @@
+/* Style global pour le corps et la page */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1; /* Couleur de fond douce pour toute la page */
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Style pour le formulaire */
+form {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+/* Style pour la ligne du formulaire */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Style pour les champs de saisie */
+.form-control {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style pour le bouton */
+.btn-primary {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Conteneur principal */
+div.container {
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+div.containerG{
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+/* Titre principal */
+h1 {
+  font-size: 28px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Zone de texte brut */
+pre {
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+/* Catégories */
+h3 {
+  font-size: 22px;
+  color: #007bff;
+  margin: 15px 0 10px;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Liste des recommandations */
+ul {
+  list-style-type: disc;
+  text-align: center;
+  margin: 10px 0 20px 50px;
+  padding: 20;
+}
+
+ul li {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #373636;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+ul li:hover {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+
+  }
+
+  h1 {
+    font-size: 24px;
+    
+
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

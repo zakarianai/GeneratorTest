@@ -1,0 +1,15 @@
+
+bcom.javatechie.dto.ChatGptResponse$Choice#getMessage()Lcom/javatechie/dto/ChatGptResponse$Message;k
+aF:/FRO/all/TestGenerator/springboot-chatgpt/src/main/java/com/javatechie/dto/ChatGptResponse.java (!"1*í
+1 (
+š
+ (0
+%0*com.javatechie.dto.ChatGptResponse$Message"__id*V
+
+__unknown_file (:*8+
+)com.javatechie.dto.ChatGptResponse$Choice"	
+message">
+ (2
+0
+%0*com.javatechie.dto.ChatGptResponse$MessageB-+
+)com.javatechie.dto.ChatGptResponse$ChoiceH
